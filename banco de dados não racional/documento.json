@@ -1,0 +1,15 @@
+[
+   {"nome": "Camila",
+    "idade": 16,
+    "endereço":[{
+        "rua": "rua do bob",
+        "número": 0,
+        "cep": 13456
+    }],
+    "endereço_id": "id"
+},
+{
+    "nome": "Paola",
+    "idade": 17
+}
+]

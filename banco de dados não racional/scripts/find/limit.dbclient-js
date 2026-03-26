@@ -1,0 +1,2 @@
+// Active: 1774550164875@@camila@1905@aula
+db("aula").collection("personagens").find().limit(1);

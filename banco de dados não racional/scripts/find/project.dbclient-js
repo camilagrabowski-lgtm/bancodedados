@@ -1,0 +1,8 @@
+// Active: 1774550164875@@camila@1905@aula
+db("aula").collection("personagens").find(
+    {},
+    {
+        nome: 1,
+        fruta: 0,
+    },
+);

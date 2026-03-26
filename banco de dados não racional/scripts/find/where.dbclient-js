@@ -1,0 +1,46 @@
+// Active: 1774550164875@@camila@1905@aula
+db("aula").collection("personagens").find({
+    nome: "Monkey D' Luffy",
+});
+
+db("aula").collection("personagens").find({
+    idade: {
+        $gt: 12,
+    },
+});
+
+db("aula").collection("personagens").find({
+    idade: {
+        $lt: 19,
+    },
+});
+
+db("aula").collection("personagens").find({
+    idade: {
+        $lt: 21,
+    },
+});
+
+db("aula").collection("personagens").find({
+    idade: 19,
+    nome: "Monkey D' Luffy",
+});
+
+db("aula").collection("personagens").find({
+    idade: {
+        $gt: 19,
+        $lt: 12,
+    },
+});
+
+db("aula").collection("personagens").find({
+    nome: {
+        $ne: 19,
+    },
+});
+
+db("aula").collection("personagens").find({
+    nome: {
+        $regex: "Luffy",
+    },
+});
