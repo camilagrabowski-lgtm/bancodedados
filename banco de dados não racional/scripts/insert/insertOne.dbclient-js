@@ -1,0 +1,5 @@
+db("aula").collection("personagens").insertOne({
+    nome: "Gecko Moria",
+    fruta: "Shadow",
+    idade: 48,
+});

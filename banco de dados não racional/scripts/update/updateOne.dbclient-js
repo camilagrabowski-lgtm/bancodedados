@@ -1,0 +1,26 @@
+db("aula").collection("personagens").updateOne(
+    { nome: "Kaido" },
+    {
+        $set: {
+            fruta: "Uo Uo no Mi",
+        },
+    },
+);
+
+db("aula").collection("personagens").updateOne(
+    { idade: 19},
+    {
+        $inc:{
+            idade:1,
+        },
+    },
+);
+
+db("aula").collection("personagens").findOneAndUpdate(
+    { idade: 20},
+    {
+        $inc: {
+            idade: -1,
+        },
+    },
+);

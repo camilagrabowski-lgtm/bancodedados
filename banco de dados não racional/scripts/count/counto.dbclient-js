@@ -1,0 +1,3 @@
+db("aula").collection("personagens").countDocuments();
+
+db("aula").collection("personagens").countDocuments({ idade: 19 });

@@ -1,0 +1,8 @@
+db("aula").collection("personagens").updateMany(
+    { },
+    {
+        $currentDate: {
+            updateAt: true,
+        },
+    },
+);

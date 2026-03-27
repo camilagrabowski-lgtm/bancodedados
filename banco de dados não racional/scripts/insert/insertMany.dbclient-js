@@ -1,5 +1,14 @@
 // Active: 1774550164875@@camila@1905@aula
-db("aula").collection("personagens")insertMany([
-      
-])
+db("aula").collection("personagens").insertMany([
+{
+      nome: "Big Mom",
+      fruta: "Soul",
+      idae: "68"
+},
+{
+    nome: "Kaido",
+    fruta: "Dragon",
+    idade: "59",
+}
+    ]);
     
