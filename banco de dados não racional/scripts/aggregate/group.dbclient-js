@@ -1,0 +1,24 @@
+// Active: 1774550164875@@camila@1905@aula
+db("aula").collection("personagens").aggregate([
+    {
+         $group: {
+            _id: {
+                $cond: {
+                  if: {
+                      $or: [{ $eq: ["$fruta", ""] },
+                       { $eq: ["$fruta", null]}
+                      {$eq: [{ $ifnull: ["$frura", null] }, null] },
+                  ],
+                  },
+                  then: "Sem fruta",
+                  else: "Usuario de fruta",
+                },
+            },
+            mediaIdade:{
+                $avg: "$idade",
+            },
+            total: { $sum: 1},
+            personagens: { $push: "$$ROOT" },
+         },
+    },
+]);

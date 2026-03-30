@@ -1,0 +1,10 @@
+db("aula").collection("personagens").aggregate([
+          {
+            $set: {
+                nomeCompleto: "$nome",
+            },
+          },
+          {
+            $unset: ["nome"]
+          },
+]);
